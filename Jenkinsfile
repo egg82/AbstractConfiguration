@@ -17,4 +17,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            archiveArtifacts artifacts: 'target/abstract-configuration-*.jar', fingerprint: true
+        }
+    }
 }
