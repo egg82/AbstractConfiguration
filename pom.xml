@@ -6,7 +6,7 @@
 
     <groupId>ninja.egg82</groupId>
     <artifactId>abstract-configuration</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
@@ -95,14 +95,17 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>https://nexus.egg82.me/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>sponge</id>
             <url>https://repo.spongepowered.org/maven/</url>
-        </repository>
-        <repository>
-            <id>egg82-ninja</id>
-            <url>https://www.myget.org/F/egg82-java/maven/</url>
         </repository>
     </repositories>
 
